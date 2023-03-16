@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Card</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <div class="card__header">
+          <img
+            class="card__image card__image-circular"
+            alt="Profile picture"
+            id="user-image"
+            src="https://picsum.photos/200"
+          />
+        </div>
+        <div class="card__content">
+          <h2 class="card__title" id="user-name">Lorem Ipsum</h2>
+          <p class="card__subtitle" id="user-email">lorem@ipsum.com</p>
+          <button
+            class="card__action card__action--primary"
+            onclick="getProfileData();"
+          >
+            Regenerate
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
